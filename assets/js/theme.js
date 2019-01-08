@@ -6,7 +6,10 @@
  */
 
 function extJS_getRepoData() {
-	let file = 'https://api.github.com/orgs/factory-00?access_token=bf487b9947632d1701f1a8e776a552c09432d270';
+	let file = 'https://api.github.com/orgs/factory-00' +
+	'&client_id=dc386b8a5c899639d885' +
+	'&client_secret=47995b7755b2f20379c133ae9409e0177f377988';
+
 	$.getJSON(file, function (data) {
 		const repoName = data.name;
 		$('[data-org-info="name"]').text(repoName);
