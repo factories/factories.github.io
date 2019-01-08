@@ -2,8 +2,8 @@
 
 function extJS_getOrgData(org_id) {
 	let api;
-	const client_id = 'dc386b8a5c899639d885';
-	const client_secret = '47995b7755b2f20379c133ae9409e0177f377988';
+	const client_id = '9e24a1926a87971c3cd7';
+	const client_secret = 'b203305300eb04727e32514dc5bedb03e35629c8';
 
 	api = 'https://api.github.com/orgs/' + org_id +
 		'?client_id=' + client_id +
