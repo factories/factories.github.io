@@ -23,8 +23,10 @@ function extJS_setOrgData() {
 			const name = data.name;
 			const repos = data.public_repos;
 			const url = data.html_url;
-			const created = new Date(data.created_at).toISOString().split("T")[0];
-			const updated = new Date(data.updated_at).toISOString().split("T")[0];
+			const created_raw = data.created_at;
+			const created_format = new Date(created_raw).toISOString().split("T")[0];
+			const updated_raw = data.updated_at;
+			const updated_format = new Date(updated_raw).toISOString().split("T")[0];
 
 			const el_login = $('article[data-org-login="' + org_id + '"]');
 
@@ -33,8 +35,8 @@ function extJS_setOrgData() {
 			el_login.find('[data-org-info="description"]').text(description);
 			el_login.find('[data-org-info="url"]').attr('href', url).text('@' + org_id);
 			el_login.find('[data-org-count="repos"]').text(repos);
-			el_login.find('[data-org-time="created"]').text(created);
-			el_login.find('[data-org-time="updated"]').text(updated);
+			el_login.find('[data-org-time="created"]').text(created_format).attr('datetime', created_raw);
+			el_login.find('[data-org-time="updated"]').text(updated_format).attr('datetime', updated_raw);
 		});
 	});
 }
