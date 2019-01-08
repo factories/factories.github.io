@@ -45,6 +45,6 @@ function extJS_setOrgData() {
  */
 
 $(function () {
-	//extJS_particlesJS('particles-js', 'assets/js/particles.dark.json');
+	extJS_particlesJS('particles-js', 'assets/js/particles.dark.json');
 	extJS_setOrgData();
 });
