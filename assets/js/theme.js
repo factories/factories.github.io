@@ -5,8 +5,3 @@ github_getUserOrgs(
 	'srv-data',
 	'Yzc4MTJiYzM0NGVhZjEwMzdmOGZhOGY3MzFjNzg3M2UwNjJiNzlhYw=='
 );
-
-github_getUserOrgsArr(
-	'srv-data',
-	'Yzc4MTJiYzM0NGVhZjEwMzdmOGZhOGY3MzFjNzg3M2UwNjJiNzlhYw=='
-);
